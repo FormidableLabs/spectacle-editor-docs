@@ -82,6 +82,8 @@ class Home extends React.Component {
         <h2
           style={{
             color: settings.highlightBlue,
+            fontFamily: settings.sans,
+            fontWeight: "100",
             marginTop: "0.25rem",
             textAlign: "center"
           }}
@@ -96,15 +98,17 @@ class Home extends React.Component {
             width: "100%"
           }}
         />
-        <p>Create [Spectacle](http://formidable.com/open-source/spectacle/) based presentations using a drag & drop interface.</p>
-        <p>
-          <img
-            alt=""
-            src="./static/drag-drop.gif"
-            width="480"
-            height="288"
-          />
-        </p>
+      <p>
+        Create <a href="http://formidable.com/open-source/spectacle/">Spectacle</a> based presentations using a drag & drop interface.
+      </p>
+      <p>
+        <img
+          alt=""
+          src="./static/drag-drop.gif"
+          width="480"
+          height="288"
+        />
+      </p>
 
         <p>Add your plot.ly charts with seamless plot.ly integration.</p>
         <p>[chart-screenshot.gif]</p>
