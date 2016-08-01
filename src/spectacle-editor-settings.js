@@ -39,7 +39,7 @@ module.exports = {
   // Media Queries
   // --------
   mediaSizes: {
-    medium: "only screen and (min-width: 1025px)"
+    medium: "only screen and (min-width: 800px)"
   }
 };
 /* eslint-enable max-len */

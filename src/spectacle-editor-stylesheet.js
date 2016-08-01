@@ -21,8 +21,8 @@ export default {
     background: settings.darkestBlue,
     boxSizing: "border-box",
     color: settings.white,
-    fontFamily: settings.serif,
-    fontSize: "16px",
+    fontFamily: settings.sans,
+    fontSize: "18px",
     lineHeight: 1.4
   },
   "h1, h2, h3, h4, h5, h6, hgroup, ul, ol, dd, p, figure, pre, table, fieldset, hr": {
@@ -39,6 +39,8 @@ export default {
   },
   p: {
     fontSize: "1rem",
+    fontWeight: 300,
+    letterSpacing: "0.015em",
     lineHeight: 1.5
   },
   "p > code, li > code, h1 > code, h2 > code, h3 > code, h4 > code, h5 > code, h6 > code": {
@@ -58,27 +60,45 @@ export default {
     maxWidth: "100%"
   },
   h1: {
-    fontSize: "3rem"
+    fontSize: "3.5rem"
   },
   h2: {
-    fontSize: "2rem"
+    fontSize: "2.5rem"
   },
   h3: {
-    fontSize: "1.5rem"
+    fontSize: "2rem"
   },
-  h4: {
-    fontSize: "1.3125rem"
+  "h4, h5, h6": {
+    fontSize: "1.5rem"
   },
   svg: {
     fill: "currentColor"
   },
+  "a, button": {
+    cursor: "pointer"
+  },
+  "a": {
+    borderBottom: `1px solid ${settings.blue}`,
+    color: settings.white,
+    fontWeight: 600,
+    textDecoration: "none",
+    transition: "border-color ease-in 193ms, color ease-in 193ms"
+  },
+  "a:visited": {
+    color: settings.blue
+  },
+  "a:hover": {
+    borderBottom: `1px solid ${settings.darkBlue}`,
+    color: settings.blue,
+    transition: "border-color ease-out 225ms, color ease-out 225ms"
+  },
   mediaQueries: {
     [settings.mediaSizes.medium]: {
       p: {
-        fontSize: "1.2rem"
+        fontSize: "1.5rem"
       },
       li: {
-        fontSize: "1.2rem"
+        fontSize: "1.75rem"
       },
       "h1": {
         fontSize: "3.75rem"
@@ -87,10 +107,7 @@ export default {
         fontSize: "2.75rem"
       },
       "h3": {
-        fontSize: "2rem"
-      },
-      "h4, h5, h6": {
-        fontSize: "1.5rem"
+        fontSize: "2.75rem"
       }
     }
   }

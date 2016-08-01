@@ -11,6 +11,7 @@ class App extends React.Component {
   }
 
   render() {
+    /*eslint-disable no-undef */
     const isBrowser = typeof window !== "undefined" && window.__STATIC_GENERATOR !== true;
     return (
       <StyleRoot
@@ -20,6 +21,7 @@ class App extends React.Component {
         {this.props.children}
       </StyleRoot>
     );
+    /*eslint-enable no-undef */
   }
 }
 
