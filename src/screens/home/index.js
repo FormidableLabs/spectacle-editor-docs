@@ -132,7 +132,7 @@ class Home extends React.Component {
         />
         <p style={{textAlign: "center"}}>
           <a
-            href="#"
+            href="https://github.com/FormidableLabs/spectacle-editor"
             key="linkGithub"
             style={{
               backgroundColor: settings.black,
@@ -151,6 +151,7 @@ class Home extends React.Component {
                 transition: "box-shadow ease-in 193ms"
               }
             }}
+            target="_blank"
           >
             <i
               className="octicon octicon-mark-github"
