@@ -14,6 +14,7 @@ export default {
     boxSizing: "inherit"
   },
   html: {
+    background: settings.darkCharcoal,
     msTextSizeAdjust: "100%",
     WebkitTextSizeAdjust: "100%"
   },
