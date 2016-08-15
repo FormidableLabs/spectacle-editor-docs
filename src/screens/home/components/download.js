@@ -81,7 +81,31 @@ class Download extends React.Component {
             <p style={styles.caption}>
               Requires 10.9 or newer
             </p>
-            <a key="downloadMac" style={styles.button}>
+            <a
+              key="downloadMac"
+              href="/static/Spectacle Editor.dmg"
+              style={styles.button}
+            >
+              <p style={styles.buttonText}>
+                <i
+                  className="octicon octicon-desktop-download"
+                  style={styles.octicon}
+                />
+                Download
+              </p>
+            </a>
+          </div>
+          {/* TODO: Uncomment when other packages are available
+            <div style={styles.col}>
+            <p style={styles.subHeading}>Windows</p>
+            <p style={styles.caption}>
+              Requires Windows 7 or newer
+            </p>
+            <a
+              key="downloadWin"
+              style={styles.button}
+              href="<INSERT PATH TO INSTALL FILE HERE>"
+            >
               <p style={styles.buttonText}>
                 <i
                   className="octicon octicon-desktop-download"
@@ -92,11 +116,12 @@ class Download extends React.Component {
             </a>
           </div>
           <div style={styles.col}>
-            <p style={styles.subHeading}>Windows</p>
-            <p style={styles.caption}>
-              Requires Windows 7 or newer
-            </p>
-            <a key="downloadWin" style={styles.button}>
+            <p style={styles.subHeading}>Linux</p>
+            <a
+              key="downloadLinux"
+              style={styles.button}
+              href="<INSERT PATH TO INSTALL FILE HERE>"
+            >
               <p style={styles.buttonText}>
                 <i
                   className="octicon octicon-desktop-download"
@@ -106,6 +131,7 @@ class Download extends React.Component {
               </p>
             </a>
           </div>
+          */}
         </div>
       </section>
     );
