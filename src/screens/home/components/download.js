@@ -3,6 +3,7 @@ import Radium from "radium";
 
 // Settings
 import settings from "../../../spectacle-editor-settings";
+import LOGO_MAC from "../../../../static/download-mac.svg";
 
 class Download extends React.Component {
   getStyles() {
@@ -20,16 +21,16 @@ class Download extends React.Component {
         display: "inline-block",
         lineHeight: 1,
         margin: "1rem 0.5rem 0",
-        padding: "0.5rem 2rem",
+        padding: "0.75em 2em",
         transition: "background-color ease-in 193ms, box-shadow ease-in 193ms",
         ":hover": {
-          backgroundColor: settings.darkerBlue,
+          backgroundColor: settings.blue,
           boxShadow: `0px 2px 10px 0px rgba(22, 22, 22, 0.75)`,
           transition: "background-color ease-out 225ms, box-shadow ease-out 225ms"
         }
       },
       buttonText: {
-        margin: 0
+        margin: `0 0 -0.5rem 0`
       },
       subHeading: {
         color: settings.highlightBlue,
@@ -37,6 +38,12 @@ class Download extends React.Component {
         fontSize: "2rem",
         fontWeight: "100",
         margin: "1rem 0 0"
+      },
+      subHeadingLogo: {
+        display: "inline-block",
+        marginRight: "2px",
+        marginLeft: "-15px",
+        width: "25px"
       },
       caption: {
         color: settings.lighterGray,
@@ -66,6 +73,9 @@ class Download extends React.Component {
         >
           Download
         </h3>
+        <p style={{ textAlign: "center" }}>
+          Spectacle Editor is in alpha release.
+        </p>
         <div
           style={{
             display: "flex",
@@ -77,7 +87,12 @@ class Download extends React.Component {
           }}
         >
           <div style={styles.col}>
-            <p style={styles.subHeading}>Mac</p>
+            <p style={styles.subHeading}>
+              <span
+                dangerouslySetInnerHTML={{ __html: LOGO_MAC }}
+                style={styles.subHeadingLogo}
+              /> Mac
+            </p>
             <p style={styles.caption}>
               Requires 10.9 or newer
             </p>
@@ -87,51 +102,13 @@ class Download extends React.Component {
               style={styles.button}
             >
               <p style={styles.buttonText}>
-                <i
-                  className="octicon octicon-desktop-download"
-                  style={styles.octicon}
-                />
                 Download
+              </p>
+              <p style={styles.caption}>
+                v0.1 for Mac
               </p>
             </a>
           </div>
-          {/* TODO: Uncomment when other packages are available
-            <div style={styles.col}>
-            <p style={styles.subHeading}>Windows</p>
-            <p style={styles.caption}>
-              Requires Windows 7 or newer
-            </p>
-            <a
-              key="downloadWin"
-              style={styles.button}
-              href="<INSERT PATH TO INSTALL FILE HERE>"
-            >
-              <p style={styles.buttonText}>
-                <i
-                  className="octicon octicon-desktop-download"
-                  style={styles.octicon}
-                />
-                Download
-              </p>
-            </a>
-          </div>
-          <div style={styles.col}>
-            <p style={styles.subHeading}>Linux</p>
-            <a
-              key="downloadLinux"
-              style={styles.button}
-              href="<INSERT PATH TO INSTALL FILE HERE>"
-            >
-              <p style={styles.buttonText}>
-                <i
-                  className="octicon octicon-desktop-download"
-                  style={styles.octicon}
-                />
-                Download
-              </p>
-            </a>
-          </div>
-          */}
         </div>
       </section>
     );
