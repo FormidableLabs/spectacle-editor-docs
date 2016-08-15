@@ -13,39 +13,7 @@ import Download from "./components/download";
 import Details from "./components/details";
 
 class Home extends React.Component {
-  getStyles() {
-    return {
-      link: {
-        borderBottom: `1px solid ${settings.blue}`,
-        color: settings.white,
-        fontWeight: 300,
-        textDecoration: "none",
-        transition: "border-color ease-in 193ms, color ease-in 193ms",
-        ":hover": {
-          borderBottom: `1px solid ${settings.darkBlue}`,
-          color: settings.blue,
-          transition: "border-color ease-out 225ms, color ease-out 225ms"
-        }
-      },
-      list: {
-        alignItems: "center",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        listStyle: "none",
-        margin: "3rem auto 10rem",
-        maxWidth: "900px",
-        padding: 0
-      },
-      listItem: {
-        flexBasis: "auto"
-      }
-    };
-  }
-
   render() {
-    const styles = this.getStyles();
     return (
       <main
         style={{
@@ -162,48 +130,13 @@ class Home extends React.Component {
             /> View on GitHub
           </a>
         </p>
+
         <Details />
+
         <Download />
-        <h3
-          style={{
-            marginTop: "5rem",
-            textAlign: "center"
-          }}
-        >
-          View sample presentations
-        </h3>
-        <ul style={styles.list}>
-          <li style={styles.listItem}>
-            <a
-              href="http://help.plot.ly/sample-presentations/goldman/"
-              key="sampleGoldman"
-              target="_blank"
-            >
-              Goldman Sachs
-            </a>
-          </li>
-          <li style={styles.listItem}>
-            <a
-              href="http://verazab.github.io/presentations/redhat/"
-              key="sampleRedHat"
-              target="_blank"
-            >
-              Red Hat
-            </a>
-          </li>
-          <li style={styles.listItem}>
-            <a
-              href="http://help.plot.ly/sample-presentations/gates/"
-              key="sampleGates"
-              target="_blank"
-            >
-              Bill & Melinda Gates
-            </a>
-          </li>
-        </ul>
 
         <Footer
-          background={`linear-gradient(0deg, ${settings.black}, ${settings.darkCharcoal})`}
+          background={`linear-gradient(180deg, ${settings.black}, ${settings.darkCharcoal})`}
           logoColor="white"
         />
       </main>
