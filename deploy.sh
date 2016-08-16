@@ -25,4 +25,4 @@ ssh -i deploy_static.pem formidable@192.241.218.94 "rm -rf static/spectacle-edit
 # copy the build to the staging arena; if this fails, site is still OK
 scp -i ./deploy_static.pem -rp ./build/* formidable@192.241.218.94:/home/formidable/static/spectacle-editor-staging
 # rename the staging arena to the actual victory site
-ssh -i ./deploy_static.pem formidable@192.241.218.94 "rm -rf static/victory && mv static/spectacle-editor-staging/ static/spectacle-editor"
+ssh -i ./deploy_static.pem formidable@192.241.218.94 "rm -rf static/spectacle-editor && mv static/spectacle-editor-staging/ static/spectacle-editor"
