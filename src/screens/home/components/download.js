@@ -109,6 +109,25 @@ class Download extends React.Component {
               </p>
             </a>
           </div>
+          <div style={styles.col}>
+            <p style={styles.subHeading}>Windows</p>
+            <p style={styles.caption}>
+              Requires Windows 7 or newer
+            </p>
+            <a
+              key="downloadWin"
+              style={styles.button}
+              href="/static/Spectacle Editorx86.exe"
+            >
+              <p style={styles.buttonText}>
+                <i
+                  className="octicon octicon-desktop-download"
+                  style={styles.octicon}
+                />
+                Download
+              </p>
+            </a>
+          </div>
         </div>
       </section>
     );
