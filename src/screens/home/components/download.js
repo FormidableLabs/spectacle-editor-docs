@@ -4,6 +4,7 @@ import Radium from "radium";
 // Settings
 import settings from "../../../spectacle-editor-settings";
 import LOGO_MAC from "../../../../static/download-mac.svg";
+import LOGO_WIN from "../../../../static/download-windows.svg";
 
 class Download extends React.Component {
   getStyles() {
@@ -98,7 +99,7 @@ class Download extends React.Component {
             </p>
             <a
               key="downloadMac"
-              href="/static/Spectacle Editor.dmg"
+              href="./static/Spectacle Editor.dmg"
               style={styles.button}
             >
               <p style={styles.buttonText}>
@@ -110,21 +111,25 @@ class Download extends React.Component {
             </a>
           </div>
           <div style={styles.col}>
-            <p style={styles.subHeading}>Windows</p>
+            <p style={styles.subHeading}>
+              <span
+                dangerouslySetInnerHTML={{ __html: LOGO_WIN }}
+                style={styles.subHeadingLogo}
+              /> Windows
+            </p>
             <p style={styles.caption}>
               Requires Windows 7 or newer
             </p>
             <a
               key="downloadWin"
               style={styles.button}
-              href="/static/Spectacle Editorx86.exe"
+              href="./static/Spectacle Editorx86.exe"
             >
               <p style={styles.buttonText}>
-                <i
-                  className="octicon octicon-desktop-download"
-                  style={styles.octicon}
-                />
                 Download
+              </p>
+              <p style={styles.caption}>
+                v0.1 for Windows
               </p>
             </a>
           </div>
