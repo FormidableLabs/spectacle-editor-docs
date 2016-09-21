@@ -88,7 +88,7 @@ class Home extends React.Component {
             textAlign: "center"
           }}
         >
-          The world’s first open-source presentations editor.
+          Next Generation Drag & Drop Presentation Builder.
         </h2>
         <div
           dangerouslySetInnerHTML={{ __html: LOGO }}
