@@ -99,7 +99,7 @@ class Download extends React.Component {
             </p>
             <a
               key="downloadMac"
-              href="./static/Spectacle Editor.dmg"
+              href="https://github.com/FormidableLabs/spectacle-editor/releases/download/v0.1.3/Spectacle.Editor-0.1.3.dmg"
               style={styles.button}
             >
               <p style={styles.buttonText}>
@@ -123,7 +123,7 @@ class Download extends React.Component {
             <a
               key="downloadWin"
               style={styles.button}
-              href="./static/Spectacle Editorx86.exe"
+              href="https://github.com/FormidableLabs/spectacle-editor/releases/download/v0.1.3/Spectacle.Editor.Setup.0.1.3.exe"
             >
               <p style={styles.buttonText}>
                 Download
