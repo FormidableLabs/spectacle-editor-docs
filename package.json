@@ -1,6 +1,6 @@
 {
   "name": "spectacle-editor-docs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Documentation site for Spectacle Editor",
   "main": "webpack.config.dev.js",
   "scripts": {
