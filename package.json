@@ -23,7 +23,7 @@
     "builder": "^4.0.0",
     "builder-docs-archetype": "^4.2.2",
     "builder-docs-archetype-dev": "^4.2.2",
-    "formidable-landers": "^3.3.3",
+    "formidable-landers": "^8.4.0",
     "history": "~1.17.0",
     "lodash": "^4.6.1",
     "marked": "^0.3.5",
